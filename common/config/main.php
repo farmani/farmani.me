@@ -15,7 +15,7 @@ return array(
 		'frontend' => dirname(__FILE__) . '/../..' . '/frontend',
 		'common' => dirname(__FILE__) . '/../..' . '/common',
 		'backend' => dirname(__FILE__) . '/../..' . '/backend',
-		'vendor' => 'common.lib.vendor'
+		'vendor' => dirname(__FILE__) . '/../..' . '/common/lib/vendor'
 	),
 	'import' => array(
 		'common.extensions.components.*',
@@ -25,9 +25,7 @@ return array(
 		'application.controllers.*',
 		'application.extensions.*',
 		'application.helpers.*',
-		'application.models.*',
-		'vendor.2amigos.yiistrap.helpers.*',
-		'vendor.2amigos.yiiwheels.helpers.*',
+		'application.models.*'
 	),
 	'components' => array(
 		'db'=>array(

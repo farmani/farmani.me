@@ -17,7 +17,7 @@ use Yiinitializr\Cli\Console;
 /**
  * Initializer provides a set of useful functions to initialize a Yii Application development.
  *
- * @author Antonio Ramirez <amigo.cobos@gmail.com>
+ * @author Antonio Ramirez <ramirez.cobos@gmail.com>
  * @package Yiinitializr.helpers
  * @since 1.0
  */
