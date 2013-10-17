@@ -36,7 +36,7 @@
     "require": {
         "yiisoft/yii": "1.1.14",
         "2amigos/yiistrap": "1.1.1",
-        "2amigos/yiiwheels": "1.0.3",
+        "2amigos/yiiwheels": "dev-master",
         "malyshev/yii-debug-toolbar": "dev-master",
         "imagine/imagine": "dev-master",
         "yiiext/imperavi-redactor-widget": "dev-master"
