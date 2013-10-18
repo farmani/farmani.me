@@ -26,7 +26,7 @@
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width">
 
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="<?php echo Yii::app()->request->getBaseUrl(true); ?>/css/bootstrap.min.css">
 	<style>
 		body {
 			padding-top: 60px;
@@ -34,9 +34,9 @@
 		}
 	</style>
 
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="<?php echo Yii::app()->request->getBaseUrl(true); ?>/css/main.css">
 
-	<script src="js/libs/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+	<script src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/js/libs/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 </head>
 <body>
 <!--[if lt IE 7]>
@@ -55,13 +55,17 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</a>
-			<a class="brand" href="#">Project name</a>
+			<a class="brand" href="#">Farmani.ME</a>
 
 			<div class="nav-collapse collapse">
 				<ul class="nav">
-					<li class="active"><a href="#">Home</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#contact">Contact</a></li>
+					<li class="active"><?php echo CHtml::link('Home', 'site/index');?></li>
+					<li><?php echo CHtml::link('Blog', 'blog/index');?></li>
+					<li><?php echo CHtml::link('PhotoBlog', 'photoblog/index');?></li>
+					<li><?php echo CHtml::link('Portfolio', 'site/portfolio');?></li>
+					<li><?php echo CHtml::link('Contact', 'site/contact');?></li>
+					<li><?php echo CHtml::link('About', 'site/about');?></li>
+					<li><?php echo CHtml::link('Sitemap', 'site/sitemap');?></li>
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
 						<ul class="dropdown-menu">
@@ -75,11 +79,6 @@
 						</ul>
 					</li>
 				</ul>
-				<form class="navbar-form pull-right">
-					<input class="span2" type="text" placeholder="Email">
-					<input class="span2" type="password" placeholder="Password">
-					<button type="submit" class="btn">Sign in</button>
-				</form>
 			</div>
 			<!--/.nav-collapse -->
 		</div>
@@ -89,9 +88,9 @@
 <?php echo $content; ?>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-<script src="js/libs/bootstrap.min.js"></script>
-<script src="js/plugins.js"></script>
-<script src="js/main.js"></script><script>
+<script src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/js/libs/bootstrap.min.js"></script>
+<script src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/js/plugins.js"></script>
+<script src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/js/main.js"></script><script>
 	var _gaq = [
 		['_setAccount', 'UA-XXXXX-X'],
 		['_trackPageview']
